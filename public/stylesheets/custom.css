@@ -17,7 +17,7 @@ header img {
 
 section {
 	margin-top: 1em;
-	font-size: 120%
+	font-size: 120%;
 	padding: 20px;
 	background: #fff;
 }
@@ -104,5 +104,18 @@ a.signup_button {
 }
 
 
+/*Footer*/
+
+footer {
+	text-align: center;
+	margin-top: 10px;
+	width: 710px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer nav {
+	float: none;
+}
 
 
