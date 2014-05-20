@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   get 'pages/home'
   get 'pages/contact'
   get "pages/about"
   get "pages/help"
 
   SampleApp::Application.routes.draw do
+  get 'users/new'
+
     match '/contact', :to => 'pages#contact', via: :get  #--Couldn't get this to work
     match '/about', :to => 'pages#about', via: :get
     match '/help', :to => 'pages#help', via: :get
+    match 'signup', :to => 'users#new', via: :get
     root :to => 'pages#home'
   end
 
